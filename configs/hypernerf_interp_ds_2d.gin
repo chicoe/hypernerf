@@ -1,7 +1,7 @@
 include 'configs/defaults.gin'
 
 image_scale = 2
-batch_size = 6144
+batch_size = 1800
 eval_batch_size = 8096
 
 max_steps = 250000
@@ -82,10 +82,10 @@ TrainConfig.background_loss_weight = 1.0
 TrainConfig.use_hyper_reg_loss = False
 TrainConfig.hyper_reg_loss_weight = 0.0001
 
-TrainConfig.print_every = 100
-TrainConfig.log_every = 1000
+TrainConfig.print_every = 1
+TrainConfig.log_every = 1
 TrainConfig.histogram_every = 5000
-TrainConfig.save_every = 10000
+TrainConfig.save_every = 1
 
 EvalConfig.eval_once = False
 EvalConfig.save_output = True
